@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+    >
+        <TextView
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:textSize="27dp"
+                tools:text="&#xf184;"
+
+        />
+
+        <LinearLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/icon"
+        >
+            <TextView android:id="@+id/field1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      tools:text="EDI-AMS"
+                      android:textColor="@android:color/black"
+                      android:textStyle="bold"
+            />
+            <TextView
+                    android:id="@+id/field2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="AMS"
+                    android:textColor="@color/colorLightText"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingRight="8dp"
+
+                      android:orientation="vertical"
+                      android:layout_centerVertical="true"
+                      android:layout_alignParentRight="true">
+
+            <TextView
+                    android:id="@+id/field3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/match_crew"
+                    android:textColor="@color/colorLightText"
+                    android:textStyle="italic"/>
+
+            <TextView android:id="@+id/time"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      tools:text="12:50-09:25"
+                      android:textColor="@android:color/holo_red_light"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

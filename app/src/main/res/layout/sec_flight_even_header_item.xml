@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorSectionHeaderBackground"
+              android:padding="10dp">
+
+    <TextView
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:id="@+id/section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="30 July, 2018"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+    />
+
+
+</LinearLayout>
